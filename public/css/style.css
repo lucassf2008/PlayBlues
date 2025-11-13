@@ -1,0 +1,89 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to top, #768ca0, #b0d5f3);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #e4ecec;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 90%;
+  max-width: 600px;
+}
+
+h1 {
+  color: #659ddd;
+}
+
+input, button {
+  padding: 10px;
+  margin: 8px;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  width: 80%;
+}
+
+button {
+  background-color: #9fc5f7;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #8fb1dd;
+}
+
+.filmes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  width: 180px;
+  text-align: center;
+}
+
+.card img {
+  width: 180px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+th {
+  background-color: #e6e6fa;
+  color: #4b0082;
+}
+
+td {
+  background-color: #fdfdfd;
+}

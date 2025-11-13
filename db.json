@@ -1,0 +1,19 @@
+{
+    "usuarios": [
+      {
+        "id": 1,
+        "nome": "Admin",
+        "sobrenome": "RomanceFlix",
+        "cpf": "00000000000",
+        "email": "admin@playblue.com",
+        "senha": "1234",
+        "cep": "",
+        "rua": "",
+        "bairro": "",
+        "cidade": "",
+        "estado": "",
+        "telefone": "(00)00000-0000"
+      }
+    ]
+  }
+  

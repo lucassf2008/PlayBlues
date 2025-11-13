@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <title>PlayBlue</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="mensagem"></h1>
+    <h2>Albuns em Destaque</h2>
+
+    <div class="filmes">
+      <div class="card">
+        <img src="img/fm.jpg" alt="Dawn FM">
+        <p><strong>Dawn FM</strong><br>Entre a vida e o além, uma estação de rádio para sua redenção.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/lux.jpg" alt="Lux">
+        <p><strong>Lux</strong><br>Luz que brilha em meio ao caos — poder, arte e reinvenção.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/renaissance.jpg" alt="Renaissance">
+        <p><strong>Renaissance</strong><br>Celebre quem você é — liberdade, dança e pura realeza sonora.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/sos.jpg" alt="SOS">
+        <p><strong>SOS</strong><br>Feridas, força e vulnerabilidade — o som cru de quem ainda sente demais.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/hmhas.jpg" alt="Hit Me Hard And Soft">
+        <p><strong>Hit Me Hard And Soft</strong><br>Um mergulho profundo nas emoções — suave e devastador ao mesmo tempo.</p>
+      </div>
+    </div>
+
+    <button onclick="irParaAdmin()">Administração</button>
+    <button onclick="sair()">Sair</button>
+    
+    <script>
+      document.getElementById('mensagem').innerText =
+        "Bem-vindo(a) à RomanceFlix, " + (localStorage.getItem('usuarioNome') || 'Convidado') + "!";
+    
+      function irParaAdmin() {
+        const user = localStorage.getItem("usuarioNome");
+        if (user.toLowerCase() !== "admin") {
+          alert("Somente o administrador pode acessar esta área!");
+          return;
+        }
+        window.location.href = 'admin.html';
+      }
+    
+      function sair() {
+        localStorage.clear();
+        window.location.href = 'index.html';
+      }
+    </script>
+</body>
+</html>
